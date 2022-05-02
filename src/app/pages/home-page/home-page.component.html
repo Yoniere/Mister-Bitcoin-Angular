@@ -2,7 +2,7 @@
   <section class="user" *ngIf="user; else blockelse">
     <div class="user-details">
     <pre>Name: {{ user.name }}</pre>
-    <pre>Coins: {{ user.coins }}</pre>
+    <pre>Coins: {{ user.coins }} $</pre>
     <pre *ngIf="rate">Bitcoin Rate: {{ rate }}</pre>
   </div>
   <div  class="user-image" >

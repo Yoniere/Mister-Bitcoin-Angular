@@ -12,15 +12,18 @@
         
         .signup-input {
             border-radius: 5px;
-            background-color: #112B3C;
-            color:#EFEFEF;
         }
     }
     .signup-btn {
         margin-top: 5px;
         border-radius: 5px;
-        background-color: #112B3C;
+        background-color: unset;
+        border: unset;
         color:#EFEFEF;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
 }
