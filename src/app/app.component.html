@@ -1,0 +1,13 @@
+<section class="main-app">
+    <header (onSelectPage)="toPage($event)" class="header">
+        
+    </header>
+    <section class="main-section main-layout">
+    <!-- <bitcoin-app class="main-layout"></bitcoin-app> -->
+    <!-- <home-page *ngIf="currPage === 'home'"></home-page>
+    <contacts-page *ngIf="currPage === 'contacts'"></contacts-page>
+    <statistics-page *ngIf="currPage === 'statistics'"></statistics-page> -->
+    <router-outlet></router-outlet>
+</section>
+    <footer></footer>
+</section>

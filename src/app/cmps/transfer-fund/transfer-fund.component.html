@@ -1,0 +1,6 @@
+<form (ngSubmit)="onTransferToContact($event,transferAmount)">
+    <label for="transferAmount">Amount</label>
+    <input [(ngModel)]="transferAmount" type="number" min="0" name="transferAmount" id="transferAmount">
+
+     <button >Transfer</button>
+</form>

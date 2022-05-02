@@ -1,0 +1,18 @@
+<section class="home-page">
+  <section class="user" *ngIf="user">
+    <div class="user-details">
+    <pre>Name: {{ user.name }}</pre>
+    <pre>Coins: {{ user.coins }}</pre>
+    <pre *ngIf="rate">Bitcoin Rate: {{ rate }}</pre>
+  </div>
+  <div  class="user-image" >
+    <img src="https://robohash.org/set2" alt="">
+  </div>
+  </section>
+  <!-- <ng-template class="signup" #> -->
+  <signup (onUserSignup)="func($event)" *ngIf="!user"></signup>
+  <!-- </ng-template > -->
+  <pre>
+    {{user | json}}
+  </pre>
+</section>

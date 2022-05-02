@@ -1,0 +1,11 @@
+<section class="contacts-page">
+  <div class="buttons">
+    <filter class="filter"></filter>
+    <a class="add-btn" [routerLink]="['/edit']">Add</a>
+  </div>
+  <contact-list
+    (remove)="onRemoveContact($event)"
+    [contacts]="contacts$ | async"
+  ></contact-list>
+</section>
+<router-outlet></router-outlet>

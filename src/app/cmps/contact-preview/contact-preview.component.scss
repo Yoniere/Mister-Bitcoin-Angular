@@ -1,0 +1,29 @@
+    .name {
+        color:#EFEFEF;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .action-section {
+        display: flex;
+        justify-content: space-between;
+        .edit-link {
+            text-decoration: none;
+            color:#EFEFEF;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .remove-btn {
+            background: none;
+            color:#EFEFEF;
+            border: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }

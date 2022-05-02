@@ -1,0 +1,7 @@
+<section class="signup-section">
+    <form (ngSubmit)="onSignup()">
+        <label for="signup">User</label>
+        <input [(ngModel)]="newUser" type="text" name="signup" id="signup">
+        <button (click)="onUserSignup.emit(user)">Signup</button>
+    </form>
+</section>

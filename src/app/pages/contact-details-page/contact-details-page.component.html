@@ -1,0 +1,7 @@
+<section class="contact-details">
+    <p class="contact-name">Name: {{contact.name}}</p>
+    <p class="contact-phone">Phone: {{contact.phone}}</p>
+    <p class="contact-email">Email: {{contact.email}}</p>
+    <transfer-fund (onTransfer)="onTransferToContact($event)" [contact]="contact"></transfer-fund>
+    <moves-list [user]="user" [contact]="contact" ></moves-list>
+</section>

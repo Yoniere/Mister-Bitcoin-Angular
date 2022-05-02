@@ -1,0 +1,40 @@
+.header-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5rem;
+    margin: 0 auto;
+    background-color: #112B3C;
+    .logo {
+        display: flex;
+        align-items: center;
+        .title {
+            color: #EFEFEF;
+            margin: 0 10px 0 0px;
+        }
+        .bitcoin-image {
+            height: 50px;
+            width: 50px;
+        }
+        
+    }
+    .nav-bar {
+        display: flex;
+        // align-items: center;
+
+        li {
+            list-style: none;
+            margin-left: 1.5rem;
+            color: #EFEFEF;
+            max-width: 60px;
+            width:100%;
+            padding: 8px;
+            cursor: pointer;
+            &:hover {
+                background-color: #F66B0E;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+

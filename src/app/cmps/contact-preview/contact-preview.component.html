@@ -1,0 +1,13 @@
+<section
+  [routerLink]="['/contacts', contact._id]"
+  *ngIf="contact"
+  class="contact-preview">
+  <p class="name">{{ contact.name }}</p>
+  <img class="image" src="https://robohash.org/{{ contact._id }}" alt="" />
+  <div class="action-section">
+      <a class="edit-link" [routerLink]="['edit', contact._id]">Edit</a>
+    <button class="remove-btn" (click)="onRemoveContact($event, contact._id)">
+      X
+    </button>
+  </div>
+</section>

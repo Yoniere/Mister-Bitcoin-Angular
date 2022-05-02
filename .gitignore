@@ -1,0 +1,56 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+src/assets/81vOF2Rr2tS._AC_SX679_.jpg
+src/assets/icons for misterBitcoin/about.svg
+src/assets/icons for misterBitcoin/arrow-down.png
+src/assets/icons for misterBitcoin/arrow-up.png
+src/assets/icons for misterBitcoin/back.png
+src/assets/icons for misterBitcoin/bitcoin.png
+src/assets/icons for misterBitcoin/coins.png
+src/assets/icons for misterBitcoin/contact.png
+src/assets/icons for misterBitcoin/delete.png
+src/assets/icons for misterBitcoin/edit.png
+src/assets/icons for misterBitcoin/home.png
+src/assets/icons for misterBitcoin/increase.png
+src/assets/icons for misterBitcoin/plus.png
+src/assets/icons for misterBitcoin/users.png
