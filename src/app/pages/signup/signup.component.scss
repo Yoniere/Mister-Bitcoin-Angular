@@ -1,0 +1,27 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        .signup-label {
+            color:#EFEFEF;
+                        margin-right: 10px;
+
+        }
+        
+        .signup-input {
+            border-radius: 5px;
+            background-color: #112B3C;
+            color:#EFEFEF;
+        }
+    }
+    .signup-btn {
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: #112B3C;
+        color:#EFEFEF;
+    }
+
+}
+

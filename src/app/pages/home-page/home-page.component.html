@@ -1,5 +1,5 @@
 <section class="home-page">
-  <section class="user" *ngIf="user">
+  <section class="user" *ngIf="user; else blockelse">
     <div class="user-details">
     <pre>Name: {{ user.name }}</pre>
     <pre>Coins: {{ user.coins }}</pre>
@@ -9,10 +9,8 @@
     <img src="https://robohash.org/set2" alt="">
   </div>
   </section>
-  <!-- <ng-template class="signup" #> -->
-  <signup (onUserSignup)="func($event)" *ngIf="!user"></signup>
-  <!-- </ng-template > -->
-  <pre>
-    {{user | json}}
-  </pre>
+  <ng-template class="signup" #blockelse>
+  <signup (onUserSignup)="func($event)"></signup>
+  </ng-template >
+
 </section>

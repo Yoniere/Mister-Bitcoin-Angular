@@ -1,3 +1,9 @@
-<section>
-    {{getMoves() | json}}
+<section *ngIf="user.moves.length!==0">
+    Recent coins sent to {{contact.name}}
+    <ul class="moves-list">
+        <li class="move" *ngFor="let move of user.moves">
+            <p>{{move.amount}} coins</p>
+            <p>{{move.at}}</p>
+        </li>
+    </ul>
 </section>

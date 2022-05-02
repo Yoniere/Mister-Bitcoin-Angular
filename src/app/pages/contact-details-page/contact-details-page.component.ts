@@ -32,6 +32,7 @@ export class ContactDetailsPageComponent implements OnInit {
 
   onTransferToContact(transferAmount) {
     this.contactService.transferCoinsToContact(this.contact, transferAmount)
+    this.router.navigateByUrl('/contacts');
   }
 
 }

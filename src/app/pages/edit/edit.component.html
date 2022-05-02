@@ -1,22 +1,40 @@
-<section>
-    <h1>{{contact._id ?'Edit':'Add'}} Contact</h1>
+<section class="edit-page">
+  <h1 class="edit-title">{{ contact._id ? "Edit" : "Add" }} Contact</h1>
 
-    <form (ngSubmit)="onSaveContact()">
-        <label for="name">Name</label>
+  <form class="edit-form" (ngSubmit)="onSaveContact()">
 
-        <input [(ngModel)]="contact.name" type="text" name="name" id="name">
+    <div class="group">
+      <label class="edit-label" for="name">Name </label>
+      <input
+        class="edit-input"
+        [(ngModel)]="contact.name"
+        type="text"
+        name="name"
+        id="name"/>
+    </div>
 
-        <label for="phone">phone</label>
-        <input [(ngModel)]="contact.phone"  type="text" name="phone" id="phone">
+    <div class="group">
+      <label class="edit-label" for="phone">Phone </label>
+      <input
+        class="edit-input"
+        [(ngModel)]="contact.phone"
+        type="text"
+        name="phone"
+        id="phone"/>
+    </div>
 
-        <label for="email">email</label>
-        <input [(ngModel)]="contact.email" type="text"
-            name="email" id="email">
+    <div class="group">
+      <label class="edit-label" for="email">Email </label>
+      <input
+        class="edit-input"
+        [(ngModel)]="contact.email"
+        type="text"
+        name="email"
+        id="email"/>
+    </div>
 
-         <button>Save</button>
-    </form>
+    <button class="edit-btn">Save</button>
+
+  </form>
 </section>
 
-<!-- [(ngModel)]="contact.name"
-[(ngModel)]="contact.phone"
-[ngModel]="contact.email" -->

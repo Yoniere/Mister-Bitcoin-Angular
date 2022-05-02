@@ -223,6 +223,7 @@ export class ContactService {
       toPhone: contact.phone,
       toEmail: contact.email,
       amount,
+      at: new Date().toDateString()
     }
     user.moves.push(move)
     storageService.store('user', user)

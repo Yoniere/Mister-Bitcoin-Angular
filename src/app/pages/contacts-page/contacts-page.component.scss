@@ -1,14 +1,18 @@
-.buttons {
-    display: flex;
-    .filter {
-        margin: 10px;
-    }
-    .add-btn {
-        margin: 10px;
-        text-decoration:none;
-        color:#EFEFEF;
-        &:hover {
-            text-decoration: underline;
+.contacts-page {
+    margin: 0 auto;
+    .buttons {
+        display: flex;
+        .filter {
+            margin: 10px;
+        }
+        .add-btn {
+            margin: 10px;
+            text-decoration:none;
+            color:#EFEFEF;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
+

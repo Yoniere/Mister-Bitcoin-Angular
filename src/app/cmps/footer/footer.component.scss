@@ -4,8 +4,11 @@
     display: flex;
     flex-direction: column;
 }
-
 .footer {
     background-color: #112B3C;
     color: #EFEFEF;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }

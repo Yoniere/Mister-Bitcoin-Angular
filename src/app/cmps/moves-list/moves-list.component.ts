@@ -11,15 +11,16 @@ export class MovesListComponent implements OnInit {
 
   @Input() contact: Contact
   @Input() user: User
-
+  movesToContcat
   constructor() { }
 
   ngOnInit(): void {
+    this.movesToContcat = this.user.moves.filter(move => this.contact._id === move.toId)
   }
 
   getMoves() {
-    const movesToContcat = this.user.moves.filter(move => this.contact._id === move.toId)
-    return movesToContcat
+    this.movesToContcat = this.user.moves.filter(move => this.contact._id === move.toId)
+    return this.movesToContcat
   }
 
 }

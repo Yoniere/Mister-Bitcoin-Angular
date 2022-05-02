@@ -1,0 +1,34 @@
+.edit-page {
+    background-color: #F66B0E;
+    border-radius: 10px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -1px 5px 16px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -1px 5px 16px 5px rgba(0,0,0,0);
+    padding: 16px;
+    .edit-title {
+        color:#EFEFEF
+    }
+    .edit-form {
+        display: flex;
+        flex-direction: column;
+        .group {
+            display: flex;
+            justify-content: space-between;
+            .edit-label {
+                color:#EFEFEF;
+            }
+            .edit-input {
+                margin-bottom: 10px;
+            }
+        }
+        .edit-btn {
+            background-color: unset;
+            border: unset;
+            color:#EFEFEF;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

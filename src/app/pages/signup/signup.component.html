@@ -1,7 +1,16 @@
 <section class="signup-section">
-    <form (ngSubmit)="onSignup()">
-        <label for="signup">User</label>
-        <input [(ngModel)]="newUser" type="text" name="signup" id="signup">
-        <button (click)="onUserSignup.emit(user)">Signup</button>
-    </form>
+  <form class="signup-form" (ngSubmit)="onSignup()">
+    <div class="top">
+      <label class="signup-label" for="signup">Username </label>
+      <input
+        class="signup-input"
+        [(ngModel)]="newUser"
+        type="text"
+        name="signup"
+        id="signup"
+        placeholder="Enter Username"
+      />
+    </div>
+    <button class="signup-btn" (click)="onUserSignup.emit(user)">Signup</button>
+  </form>
 </section>
